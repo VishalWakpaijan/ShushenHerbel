@@ -263,6 +263,23 @@ body {
 }
 
 @media screen and (max-width: 468px) {
+  .navigation {
+    .nav_wrapper {
+      padding: 0.4rem;
+      justify-content: space-between;
+
+      .logo {
+        img {
+          width: 50px;
+        }
+      }
+
+      .center_navigation {
+        display: none;
+      }
+    }
+  }
+
   .hero_banner {
     background: url("/Images/Banner-01@1X.png");
     background-repeat: no-repeat;
