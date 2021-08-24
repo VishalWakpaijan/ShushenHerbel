@@ -56,8 +56,9 @@ body {
     }
 
     .right_navigation {
+      padding-left: 4rem;
       li {
-        margin: 0 1rem;
+        margin: 0 0.8rem;
 
         a {
           div {
@@ -154,7 +155,7 @@ body {
 .page_indicator {
   p {
     margin-top: 3.8rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: gray;
   }
 
@@ -342,6 +343,16 @@ body {
     top: 220px;
     left: 150px;
     img {
+      width: 40px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .leaf_8 {
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    img {
       width: 60px;
       transform: rotate(80deg);
     }
@@ -366,12 +377,12 @@ body {
 
   .outTeam_wrapper {
     .box {
-      padding: 1rem 5rem;
+      padding: 1rem 0rem;
 
-      span {
+      .lotas_bg {
         background-image: url("/Images/lotas.png");
         background-position: center;
-        background-size: 95%;
+        background-size: contain;
         background-repeat: no-repeat;
       }
 
@@ -391,20 +402,63 @@ body {
     }
 
     img {
-      margin: 0 40px;
-      width: 300px;
+      width: 320px;
       height: 400px;
     }
 
     & > div {
       padding: 0 4rem;
       justify-content: center;
-      gap: 50px;
+
+      gap: 40px;
     }
   }
 }
 
-@media screen and (max-width: 468px) {
+// Footer ###################################################################################
+
+.footer_section {
+  background-color: #3d3d3d;
+  .footer_nav {
+    padding: 20px;
+
+    flex-wrap: wrap;
+    li {
+      margin: 0 0.9rem;
+      a {
+        font-size: 0.8rem;
+        color: #d1d1d1;
+      }
+    }
+  }
+
+  .social_links {
+    li {
+      padding: 10px 15px;
+      background-color: #d1d1d1;
+      margin: 1.8rem 1.5rem;
+      border-radius: 100%;
+
+      a {
+        color: #3d3d3d;
+      }
+    }
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: #d1d1d1;
+  }
+}
+
+// ########################################################################################################
+
+// Media
+
+@media screen and (max-width: 768px) {
   .navigation {
     .nav_wrapper {
       padding: 0.5rem;
@@ -574,30 +628,47 @@ body {
     }
   }
 
-  .outTeam_wrapper {
-    .box {
-      padding: 1rem 0rem;
+  // Our team
 
-      .about_person {
-        width: 250px;
-        p {
-          width: 250px;
-          color: #707070;
-          line-height: 1.3;
-        }
+  .ourTeam_section {
+    .leaf_7 {
+      top: 20px;
+      left: 40px;
+      img {
+        width: 40px;
+        transform: rotate(190deg);
       }
     }
 
-    img {
-      width: 250px;
-      height: 300px;
+    .leaf_8 {
+      top: 70px;
+      left: 290px;
+      img {
+        width: 40px;
+        transform: rotate(170deg);
+      }
     }
 
-    & > div {
-      padding: 0 4rem;
+    .outTeam_wrapper {
+      .box {
+        padding: 1rem 0rem;
 
-      gap: 50px;
-      flex-wrap: wrap;
+        .about_person {
+          width: 250px;
+          p {
+            width: 250px;
+            color: #707070;
+            line-height: 1.3;
+          }
+        }
+      }
+
+      & > div {
+        padding: 0 4rem;
+
+        gap: 50px;
+        flex-wrap: wrap;
+      }
     }
   }
 }
