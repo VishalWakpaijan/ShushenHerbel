@@ -435,7 +435,7 @@ body {
       padding: 0 4rem;
       justify-content: center;
 
-      gap: 40px;
+      gap: 100px;
     }
   }
 }
@@ -681,6 +681,7 @@ body {
 
         .about_person {
           width: 250px;
+          text-align: center;
           p {
             width: 250px;
             color: #707070;
