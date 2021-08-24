@@ -1,7 +1,7 @@
 // classess
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -9,4 +9,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.highlights_text {
+  color: #41c131;
+}
+
+.section_heading {
+  text-align: center;
+  font-size: 1.4rem;
+
+  h1 {
+    font-weight: 900;
+  }
 }
