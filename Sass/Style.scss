@@ -17,9 +17,14 @@ body {
   font-family: $-ff-PrimaryFont;
   background-color: $-clr-primaryBG;
   color: $-clr-primaryTEXT;
+
+  overflow: auto;
 }
 
 .navigation {
+  background-color: $-clr-primaryBG;
+  z-index: 20;
+
   .nav_wrapper {
     padding: 0.5rem;
     justify-content: space-between;
@@ -262,15 +267,146 @@ body {
   }
 }
 
+//  Family section
+
+.family_section {
+  position: relative;
+
+  .leaf_5 {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    img {
+      width: 40px;
+      transform: rotate(80deg);
+    }
+  }
+
+  .leaf_6 {
+    position: absolute;
+    bottom: -50px;
+    left: 500px;
+    img {
+      width: 40px;
+      transform: rotate(190deg);
+    }
+  }
+
+  margin: 8rem 0;
+
+  background-image: url("/Images/familyLotas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .section_wrapper {
+    justify-content: space-between;
+
+    .section_text {
+      width: 250px;
+
+      h1 {
+        font-weight: 900;
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-weight: 500;
+
+        color: #707070;
+      }
+    }
+
+    .text-1 {
+      margin: 2rem 0 0 0rem;
+    }
+    .text-2 {
+      margin: 0 0rem 1rem -3rem;
+    }
+  }
+}
+
+// Our team
+
+.ourTeam_section {
+  position: relative;
+
+  .leaf_7 {
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    img {
+      width: 60px;
+      transform: rotate(80deg);
+    }
+  }
+
+  position: relative;
+  margin-top: 5rem;
+  padding: 5rem 0;
+
+  background-color: #e3f5dd;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100px;
+    top: -18px;
+    left: 0;
+    background-image: url("/Images/Subtraction\ 1png.png");
+    background-repeat: no-repeat;
+  }
+
+  .outTeam_wrapper {
+    .box {
+      padding: 1rem 5rem;
+
+      span {
+        background-image: url("/Images/lotas.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .about_person {
+        width: 600px;
+        color: #707070;
+        h2 {
+          font-size: 1.3rem;
+          margin: 0.5rem 0;
+        }
+
+        p {
+          color: #707070;
+          line-height: 1.3;
+        }
+      }
+    }
+
+    img {
+      margin: 0 40px;
+      width: 300px;
+      height: 400px;
+    }
+
+    & > div {
+      padding: 0 4rem;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+}
+
 @media screen and (max-width: 468px) {
   .navigation {
     .nav_wrapper {
-      padding: 0.4rem;
+      padding: 0.5rem;
       justify-content: space-between;
 
       .logo {
         img {
-          width: 50px;
+          width: 60px;
         }
       }
 
@@ -386,6 +522,76 @@ body {
     .ourStory_para {
       margin: 2rem 0;
       text-align: center;
+    }
+  }
+
+  .family_section {
+    .leaf_5 {
+      position: absolute;
+      top: 0px;
+      right: 30px;
+      img {
+        width: 40px;
+        transform: rotate(80deg);
+      }
+    }
+
+    .leaf_6 {
+      position: absolute;
+      bottom: 0px;
+      left: 40px;
+      img {
+        width: 40px;
+        transform: rotate(190deg);
+      }
+    }
+
+    margin: 8rem 0;
+    .section_wrapper {
+      flex-direction: column;
+      justify-content: space-between;
+
+      img {
+        width: 300px;
+      }
+
+      .section_text {
+        width: 250px;
+      }
+
+      .text-1 {
+        margin: 2rem 0 0 0rem;
+      }
+      .text-2 {
+        margin: 0 0rem 1rem -3rem;
+      }
+    }
+  }
+
+  .outTeam_wrapper {
+    .box {
+      padding: 1rem 0rem;
+
+      .about_person {
+        width: 250px;
+        p {
+          width: 250px;
+          color: #707070;
+          line-height: 1.3;
+        }
+      }
+    }
+
+    img {
+      width: 250px;
+      height: 300px;
+    }
+
+    & > div {
+      padding: 0 4rem;
+
+      gap: 50px;
+      flex-wrap: wrap;
     }
   }
 }
