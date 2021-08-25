@@ -34,7 +34,7 @@ body {
 .searchBarActive {
   display: block;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 50%;
 
   z-index: 100;
@@ -42,8 +42,8 @@ body {
   transform: translate(-50%);
 
   input[type="search"] {
-    width: 330px;
-    padding: 0.3rem 0.8rem;
+    width: 340px;
+    padding: 0.4rem 0.8rem;
     border: 1px solid rgb(201, 199, 199);
     border-radius: 8px;
 
@@ -70,7 +70,7 @@ body {
   height: 497vh;
 
   background-image: linear-gradient(to top, #09203f 0%, #2e3d49 100%);
-  opacity: 0.9;
+  opacity: 0.6;
 
   z-index: 99;
 }
