@@ -17,3 +17,9 @@ const removeSearchBar = () => {
 };
 
 overlay.addEventListener("click", removeSearchBar);
+
+//   response
+
+const submitHandler = () => {
+  alert("Thanks visit again");
+};
